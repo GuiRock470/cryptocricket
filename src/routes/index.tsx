@@ -13,6 +13,7 @@ import AnalysisDetails from "../pages/AnalysisDetails";
 import Contact from "../pages/Contact";
 import { useAdmin } from "../context/AdminContext";
 
+
 const RoutesAdmin: React.FC = () => (
   <HashRouter>
     <Routes>
