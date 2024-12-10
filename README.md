@@ -27,7 +27,3 @@ Este projeto foi desenvolvido com o objetivo de demonstrar habilidades em desenv
 1. Clone o repositório
 2. Instale as dependências com `npm install`
 3. Execute a aplicação com `npm run dev`
-
-## Contato
-
-Para mais informações, entre em contato pelo [seu email] ou visite [seu portfólio].
