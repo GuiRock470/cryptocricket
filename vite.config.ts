@@ -5,6 +5,7 @@ import * as path from 'path';
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
+  base: '/cryptocricket',
   resolve: {
     alias: {
       'src': path.resolve(__dirname, 'src/'),
