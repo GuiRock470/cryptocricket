@@ -4,6 +4,7 @@
   "version": "0.0.0",
   "type": "module",
   "deploy": "gh-pages -d dist",
+  "homepage": "https://guirock470.github.io/cryptocricket/",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
