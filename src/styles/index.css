@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 1423px;
+  min-height: 100vh;
+  width: 100%;
+}
+
+body[data-scroll-locked].chakra-ui-light{
+  overflow: unset !important;
+}
+
+#root{
+  width: 100%;
+}
+
+*{
+  box-sizing: border-box;
+}
+
+th{
+  font-weight: 400 !important;
+  font-weight: 'Sora';
+  color: #181825 !important;
+  text-transform: capitalize !important;
+  font-size: 16px !important;
+}
+
+input{
+  height: 50px !important;
+  border-radius: 8px;
+  border-color: #DEDEDE !important;
+  font-size: 16px;
+  font-weight: 400;
+}
+input::placeholder{
+  font-size: 16px;
+  font-weight: 400;
+  color: #73787E;
+}
+input:focus-visible{
+  border-color: #3971EF !important;
+  box-shadow: 0 0 0 1px #3971EF !important;
+}
+.react-datepicker-wrapper{
+  width: 100% !important;
+  z-index: 10000 !important;
+}
+
+.react-datepicker-popper{
+  z-index: 300;
+}
