@@ -1,5 +1,5 @@
 import React from "react";
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes, HashRouter } from "react-router-dom";
 import Portfolio from "../pages/Admin/Portfolio";
 import Highlights from "../pages/Admin/Highlights";
 import Analysis from "../pages/Admin/Analysis";
@@ -14,27 +14,31 @@ import Contact from "../pages/Contact";
 import { useAdmin } from "../context/AdminContext";
 
 const RoutesAdmin: React.FC = () => (
-  <Routes>
-    <Route path="/" element={<Portfolio />} />
-    <Route path="/portfolio" element={<Portfolio />} />
-    <Route path="/highlights" element={<Highlights />} />
-    <Route path="/reports" element={<Reports />} />
-    <Route path="/analysis" element={<Analysis />} />
-    <Route path="*" element={<Portfolio />} />
-  </Routes>
+  <HashRouter>
+    <Routes>
+      <Route path="/" element={<Portfolio />} />
+      <Route path="/portfolio" element={<Portfolio />} />
+      <Route path="/highlights" element={<Highlights />} />
+      <Route path="/reports" element={<Reports />} />
+      <Route path="/analysis" element={<Analysis />} />
+      <Route path="*" element={<Portfolio />} />
+    </Routes>
+  </HashRouter>
 );
 
 const RoutesUser: React.FC = () => (
-  <Routes>
-    <Route path="/" element={<Home />} />
-    <Route path="/portfolio" element={<PortfolioUser />} />
-    <Route path="/highlights" element={<HighlightsUser />} />
-    <Route path="/reports" element={<ReportsUser />} />
-    <Route path="/analysis" element={<AnalysisUser />} />
-    <Route path="/analysis/:name" element={<AnalysisDetails />} />
-    <Route path="/contact" element={<Contact />} />
-    <Route path="*" element={<Home />} />
-  </Routes>
+  <HashRouter>
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/portfolio" element={<PortfolioUser />} />
+      <Route path="/highlights" element={<HighlightsUser />} />
+      <Route path="/reports" element={<ReportsUser />} />
+      <Route path="/analysis" element={<AnalysisUser />} />
+      <Route path="/analysis/:name" element={<AnalysisDetails />} />
+      <Route path="/contact" element={<Contact />} />
+      <Route path="*" element={<Home />} />
+    </Routes>
+  </HashRouter>
 );
 
 const RouteHandler: React.FC = () => {
