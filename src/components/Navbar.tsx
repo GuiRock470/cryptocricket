@@ -58,17 +58,17 @@ const Navbar: React.FC<NavbarProps> = ({selected}) => {
 
   const linksAdmin = [
     { id: 0, label: 'Portfólio', dest: '/' },
-    { id: 1, label: 'Destaques', dest: '/#highlights' },
-    { id: 2, label: 'Relatórios', dest: '/#reports' },
-    { id: 3, label: 'Análises', dest: '/#analysis' }
+    { id: 1, label: 'Destaques', dest: '/#/highlights' },
+    { id: 2, label: 'Relatórios', dest: '/#/reports' },
+    { id: 3, label: 'Análises', dest: '/#/analysis' }
   ];
   const linksUser = [
     { id: 0, label: 'Início', dest: '/' },
-    { id: 1, label: 'Portfólio', dest: '/#portfolio' },
-    { id: 2, label: 'Destaques', dest: '/#highlights' },
-    { id: 3, label: 'Relatórios', dest: '/#reports' },
-    { id: 4, label: 'Análises', dest: '/#analysis' },
-    { id: 5, label: 'Contato', dest: '/#contact' }
+    { id: 1, label: 'Portfólio', dest: '/#/portfolio' },
+    { id: 2, label: 'Destaques', dest: '/#/highlights' },
+    { id: 3, label: 'Relatórios', dest: '/#/reports' },
+    { id: 4, label: 'Análises', dest: '/#/analysis' },
+    { id: 5, label: 'Contato', dest: '/#/contact' }
   ]
 
   const renderLinks = isAdmin ? linksAdmin : linksUser;
