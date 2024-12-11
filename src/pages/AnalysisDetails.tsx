@@ -52,7 +52,7 @@ const AnalysisDetails: React.FC = () => {
             fontSize='16px'
             fontWeight={400}
             _hover={{ bg: '#181825' }}
-            onClick={() => navigate('/analysis')}
+            onClick={() => navigate('/#analysis')}
           >
             Voltar
           </Button>

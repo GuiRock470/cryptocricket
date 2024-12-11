@@ -1,5 +1,5 @@
 import React from "react";
-import { Route, Routes, HashRouter } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import Portfolio from "../pages/Admin/Portfolio";
 import Highlights from "../pages/Admin/Highlights";
 import Analysis from "../pages/Admin/Analysis";
@@ -15,7 +15,7 @@ import { useAdmin } from "../context/AdminContext";
 
 
 const RoutesAdmin: React.FC = () => (
-  <HashRouter>
+  
     <Routes>
       <Route path="/" element={<Portfolio />} />
       <Route path="/portfolio" element={<Portfolio />} />
@@ -24,11 +24,11 @@ const RoutesAdmin: React.FC = () => (
       <Route path="/analysis" element={<Analysis />} />
       <Route path="*" element={<Portfolio />} />
     </Routes>
-  </HashRouter>
+  
 );
 
 const RoutesUser: React.FC = () => (
-  <HashRouter>
+  
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/portfolio" element={<PortfolioUser />} />
@@ -39,7 +39,7 @@ const RoutesUser: React.FC = () => (
       <Route path="/contact" element={<Contact />} />
       <Route path="*" element={<Home />} />
     </Routes>
-  </HashRouter>
+  
 );
 
 const RouteHandler: React.FC = () => {
